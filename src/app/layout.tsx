@@ -5,26 +5,21 @@ import "./globals.css";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin", "cyrillic"],
-  display: "swap",
 });
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin", "cyrillic"],
-  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "ЕВА - Мастер маникюра в Москве",
-  description: "Профессиональный мастер маникюра Ева. Качественные услуги маникюра, педикюра и дизайна ногтей. Записаться онлайн, посмотреть цены и галерею работ.",
-  keywords: "маникюр, педикюр, дизайн ногтей, мастер маникюра, Москва, Ева",
-  authors: [{ name: "Ева", url: "https://eva-nails.ru" }],
+  title: "ЕВА - Профессиональный мастер маникюра в Москве",
+  description: "Профессиональный маникюр и педикюр в Москве. Качественное покрытие гель-лаком, дизайн ногтей, наращивание. Опытный мастер, индивидуальный подход.",
+  keywords: ["маникюр Москва", "педикюр", "гель-лак", "дизайн ногтей", "мастер маникюра", "ногтевой сервис"],
+  authors: [{ name: "Ева" }],
   openGraph: {
-    title: "ЕВА - Мастер маникюра в Москве",
-    description: "Профессиональный мастер маникюра Ева. Качественные услуги маникюра и дизайна ногтей.",
-    url: "https://eva-nails.ru",
-    siteName: "ЕВА - Мастер маникюра",
-    locale: "ru_RU",
+    title: "ЕВА - Мастер маникюра",
+    description: "Профессиональный маникюр и педикюр в Москве",
     type: "website",
   },
 };
@@ -35,9 +30,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru">
+    <html lang="ru" suppressHydrationWarning>
       <body
         className={`${inter.variable} ${playfair.variable} antialiased`}
+        suppressHydrationWarning
       >
         {children}
       </body>
