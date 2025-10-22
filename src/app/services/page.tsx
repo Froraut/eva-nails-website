@@ -143,12 +143,12 @@ export default function Services() {
       <Header />
 
       {/* Героический блок */}
-      <section className="bg-gradient-to-br from-primary/5 via-white to-secondary/10 py-20">
+      <section className="bg-gradient-to-br from-primary/5 via-white to-secondary/10 py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-6">
             Услуги и <span className="text-primary">цены</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base md:text-xl text-gray-600 max-w-2xl mx-auto">
             Полный спектр услуг по уходу за ногтями с прозрачным ценообразованием
           </p>
         </div>
@@ -203,17 +203,17 @@ export default function Services() {
       {/* Прайс-лист */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-16">
+          <div className="space-y-12 md:space-y-16">
             {services.map((category) => (
               <div key={category.category}>
-                <h2 className="font-serif text-3xl font-bold text-gray-900 mb-8 text-center">
+                <h2 className="font-serif text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8 text-center">
                   {category.category}
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                   {category.items.map((service, index) => (
                     <div key={index} className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6">
                       <div className="mb-4">
-                        <div className="w-full h-32 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl mb-4 flex items-center justify-center">
+                        <div className="w-full h-28 md:h-32 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl mb-4 flex items-center justify-center">
                           <span className="text-gray-400 text-sm">Фото услуги</span>
                         </div>
                       </div>
@@ -293,24 +293,24 @@ export default function Services() {
       </section>
 
       {/* CTA секция */}
-      <section className="py-20 bg-primary">
+      <section className="py-16 md:py-20 bg-primary">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-6">
+          <h2 className="font-serif text-2xl md:text-4xl font-bold text-white mb-6">
             Готовы записаться?
           </h2>
-          <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-white/90 mb-8 max-w-2xl mx-auto">
             Выберите удобное время и получите качественный маникюр уже сегодня!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contacts"
-              className="bg-white text-primary px-8 py-4 rounded-full hover:bg-gray-100 transition-colors duration-200 font-semibold text-lg shadow-lg"
+              className="bg-white text-primary px-8 py-4 rounded-full hover:bg-gray-100 transition-colors duration-200 font-semibold text-base sm:text-lg shadow-lg w-full sm:w-auto"
             >
               Записаться онлайн
             </Link>
             <a
               href="tel:+79999999999"
-              className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-primary transition-colors duration-200 font-semibold text-lg"
+              className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-primary transition-colors duration-200 font-semibold text-base sm:text-lg w-full sm:w-auto"
             >
               Позвонить сейчас
             </a>

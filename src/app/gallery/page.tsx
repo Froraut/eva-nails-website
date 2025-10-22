@@ -42,12 +42,12 @@ export default function Gallery() {
       <Header />
 
       {/* Героический блок */}
-      <section className="bg-gradient-to-br from-primary/5 via-white to-secondary/10 py-20">
+      <section className="bg-gradient-to-br from-primary/5 via-white to-secondary/10 py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-6">
             Галерея <span className="text-primary">работ</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base md:text-xl text-gray-600 max-w-2xl mx-auto">
             Более 1000 выполненных работ различных техник и стилей
           </p>
         </div>
@@ -56,12 +56,12 @@ export default function Gallery() {
       {/* Фильтры */}
       <section className="py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4">
             {filters.map((filter) => (
               <button
                 key={filter.id}
                 onClick={() => setActiveFilter(filter.id)}
-                className={`px-6 py-3 rounded-full font-medium transition-all duration-200 ${
+                className={`px-4 md:px-6 py-2.5 md:py-3 rounded-full font-medium transition-all duration-200 ${
                   activeFilter === filter.id
                     ? 'bg-primary text-white shadow-lg'
                     : 'bg-white text-gray-700 hover:bg-primary/10 hover:text-primary'
@@ -77,10 +77,10 @@ export default function Gallery() {
       {/* Галерея */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
             {filteredItems.map((item) => (
               <div key={item.id} className="group cursor-pointer">
-                <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 aspect-square mb-4">
+                <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 aspect-square mb-3 sm:mb-4">
                   {/* Плейсхолдер для фото */}
                   <div className="w-full h-full flex items-center justify-center">
                     <div className="text-center text-gray-500">
@@ -96,8 +96,8 @@ export default function Gallery() {
                   {/* Оверлей при наведении */}
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center">
                     <div className="text-center text-white p-4">
-                      <h3 className="font-serif text-lg font-bold mb-2">{item.title}</h3>
-                      <p className="text-sm text-white/80">{item.description}</p>
+                      <h3 className="font-serif text-base sm:text-lg font-bold mb-1 sm:mb-2">{item.title}</h3>
+                      <p className="text-xs sm:text-sm text-white/80">{item.description}</p>
                     </div>
                   </div>
                 </div>
@@ -214,24 +214,24 @@ export default function Gallery() {
       </section>
 
       {/* CTA секция */}
-      <section className="py-20 bg-primary">
+      <section className="py-16 md:py-20 bg-primary">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-6">
+          <h2 className="font-serif text-2xl md:text-4xl font-bold text-white mb-6">
             Хотите такой же маникюр?
           </h2>
-          <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-white/90 mb-8 max-w-2xl mx-auto">
             Покажите мне понравившуюся работу или опишите желаемый дизайн — создам именно то, что вы хотите!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contacts"
-              className="bg-white text-primary px-8 py-4 rounded-full hover:bg-gray-100 transition-colors duration-200 font-semibold text-lg shadow-lg"
+              className="bg-white text-primary px-8 py-4 rounded-full hover:bg-gray-100 transition-colors duration-200 font-semibold text-base sm:text-lg shadow-lg w-full sm:w-auto"
             >
               Записаться на дизайн
             </Link>
             <a
               href="tel:+79999999999"
-              className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-primary transition-colors duration-200 font-semibold text-lg"
+              className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-primary transition-colors duration-200 font-semibold text-base sm:text-lg w-full sm:w-auto"
             >
               Обсудить дизайн
             </a>

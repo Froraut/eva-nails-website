@@ -13,12 +13,12 @@ export default function About() {
       <Header />
 
       {/* Героический блок */}
-      <section className="bg-gradient-to-br from-primary/5 via-white to-secondary/10 py-20">
+      <section className="bg-gradient-to-br from-primary/5 via-white to-secondary/10 py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-6">
             О мастере <span className="text-primary">Еве</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base md:text-xl text-gray-600 max-w-2xl mx-auto">
             Профессиональный мастер маникюра с многолетним опытом работы
           </p>
         </div>
@@ -27,7 +27,7 @@ export default function About() {
       {/* Основная информация */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
             <div>
               <h2 className="font-serif text-3xl font-bold text-gray-900 mb-8">
                 Моя история
@@ -49,7 +49,7 @@ export default function About() {
             </div>
 
             <div className="relative">
-              <div className="w-full h-96 lg:h-[500px] bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl flex items-center justify-center">
+              <div className="w-full h-64 md:h-80 lg:h-[500px] bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl flex items-center justify-center">
                 <div className="text-center text-gray-500">
                   <div className="w-32 h-32 bg-primary/20 rounded-full mx-auto mb-4 flex items-center justify-center">
                     <svg className="w-16 h-16 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -68,11 +68,11 @@ export default function About() {
       {/* Навыки и сертификаты */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="font-serif text-2xl md:text-4xl font-bold text-gray-900 mb-4">
               Навыки и специализации
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
               Постоянно развиваюсь и изучаю новые техники для создания идеального маникюра
             </p>
           </div>
@@ -124,11 +124,11 @@ export default function About() {
       {/* Ценности */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="font-serif text-2xl md:text-4xl font-bold text-gray-900 mb-4">
               Мои принципы работы
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
               Что важно для меня в работе с клиентами
             </p>
           </div>
@@ -174,24 +174,24 @@ export default function About() {
       </section>
 
       {/* CTA секция */}
-      <section className="py-20 bg-primary">
+      <section className="py-16 md:py-20 bg-primary">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-6">
+          <h2 className="font-serif text-2xl md:text-4xl font-bold text-white mb-6">
             Готовы записаться на приём?
           </h2>
-          <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-white/90 mb-8 max-w-2xl mx-auto">
             Свяжитесь со мной для записи или консультации. Буду рада помочь вам создать идеальный маникюр!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contacts"
-              className="bg-white text-primary px-8 py-4 rounded-full hover:bg-gray-100 transition-colors duration-200 font-semibold text-lg shadow-lg"
+              className="bg-white text-primary px-8 py-4 rounded-full hover:bg-gray-100 transition-colors duration-200 font-semibold text-base sm:text-lg shadow-lg w-full sm:w-auto"
             >
               Записаться
             </Link>
             <a
               href="tel:+79999999999"
-              className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-primary transition-colors duration-200 font-semibold text-lg"
+              className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-primary transition-colors duration-200 font-semibold text-base sm:text-lg w-full sm:w-auto"
             >
               Позвонить
             </a>

@@ -10,7 +10,7 @@ export default function Home() {
       {/* Героический блок */}
       <section className="relative bg-gradient-to-br from-primary/5 via-white to-secondary/10 py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="text-center lg:text-left">
               <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
                 Красивые ногти — <span className="text-primary">это просто</span>
@@ -22,20 +22,20 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
                   href="/contacts"
-                  className="bg-primary text-white px-8 py-4 rounded-full hover:bg-primary-dark transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  className="bg-primary text-white px-8 py-4 rounded-full hover:bg-primary-dark transition-all duration-200 font-semibold text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 w-full sm:w-auto"
                 >
                   Записаться на приём
                 </Link>
                 <Link
                   href="/gallery"
-                  className="border-2 border-primary text-primary px-8 py-4 rounded-full hover:bg-primary hover:text-white transition-all duration-200 font-semibold text-lg"
+                  className="border-2 border-primary text-primary px-8 py-4 rounded-full hover:bg-primary hover:text-white transition-all duration-200 font-semibold text-base sm:text-lg w-full sm:w-auto"
                 >
                   Посмотреть работы
                 </Link>
               </div>
             </div>
             <div className="relative">
-              <div className="w-full h-96 lg:h-[500px] bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl flex items-center justify-center">
+              <div className="w-full h-64 md:h-80 lg:h-[500px] bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl flex items-center justify-center">
                 <div className="text-center text-gray-500">
                   <div className="w-24 h-24 bg-primary/20 rounded-full mx-auto mb-4 flex items-center justify-center">
                     <svg className="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -156,7 +156,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               href="/services"
-              className="inline-flex items-center text-primary hover:text-primary-dark font-semibold text-lg"
+              className="inline-flex items-center text-primary hover:text-primary-dark font-semibold text-base sm:text-lg"
             >
               Посмотреть все услуги
               <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -243,13 +243,13 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contacts"
-              className="bg-white text-primary px-8 py-4 rounded-full hover:bg-gray-100 transition-colors duration-200 font-semibold text-lg shadow-lg"
+              className="bg-white text-primary px-8 py-4 rounded-full hover:bg-gray-100 transition-colors duration-200 font-semibold text-base sm:text-lg shadow-lg w-full sm:w-auto"
             >
               Записаться онлайн
             </Link>
             <a
               href="tel:+79999999999"
-              className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-primary transition-colors duration-200 font-semibold text-lg"
+              className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-primary transition-colors duration-200 font-semibold text-base sm:text-lg w-full sm:w-auto"
             >
               Позвонить сейчас
             </a>
