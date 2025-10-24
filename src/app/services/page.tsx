@@ -3,8 +3,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Услуги и цены - Мастер маникюра Ева в Москве',
-  description: 'Полный прайс-лист услуг мастера маникюра Евы. Классический маникюр, гель-лак, дизайн ногтей, педикюр и многое другое.',
+  title: 'Услуги и цены - Мастер маникюра Ева в Минске',
+  description: 'Полный прайс-лист услуг мастера маникюра Евы в Минске. Классический маникюр, гель-лак, дизайн ногтей, педикюр и многое другое.',
 };
 
 export default function Services() {
@@ -15,19 +15,19 @@ export default function Services() {
         {
           name: 'Классический маникюр',
           description: 'Обрезной маникюр с обработкой кутикулы, полировкой ногтей и покрытием лаком',
-          price: '1 500 ₽',
+          price: '50 BYN',
           duration: '60 мин'
         },
         {
           name: 'Европейский маникюр',
           description: 'Необрезной маникюр с использованием ремувера для кутикулы',
-          price: '1 300 ₽',
+          price: '43 BYN',
           duration: '45 мин'
         },
         {
           name: 'Комбинированный маникюр',
           description: 'Сочетание обрезного и европейского маникюра',
-          price: '1 800 ₽',
+          price: '60 BYN',
           duration: '75 мин'
         }
       ]
@@ -38,19 +38,19 @@ export default function Services() {
         {
           name: 'Гель-лак однотонный',
           description: 'Нанесение гель-лака выбранного цвета (включая маникюр)',
-          price: '2 500 ₽',
+          price: '83 BYN',
           duration: '90 мин'
         },
         {
           name: 'Гель-лак с дизайном',
           description: 'Гель-лак с простым дизайном (френч, градиент, стемпинг)',
-          price: '2 800 ₽',
+          price: '93 BYN',
           duration: '105 мин'
         },
         {
           name: 'Гель-лак премиум',
           description: 'Гель-лак премиум-класса с extended wear формулой',
-          price: '3 200 ₽',
+          price: '107 BYN',
           duration: '90 мин'
         }
       ]
@@ -61,31 +61,31 @@ export default function Services() {
         {
           name: 'Френч классический',
           description: 'Классический французский маникюр с белой улыбкой',
-          price: '500 ₽',
+          price: '17 BYN',
           duration: '30 мин'
         },
         {
           name: 'Градиент (омбре)',
           description: 'Плавный переход между двумя цветами',
-          price: '400 ₽',
+          price: '13 BYN',
           duration: '25 мин'
         },
         {
           name: 'Стемпинг',
           description: 'Нанесение узора с помощью специальных пластин',
-          price: '300 ₽',
+          price: '10 BYN',
           duration: '20 мин'
         },
         {
           name: 'Ручная роспись',
           description: 'Художественная роспись ногтей по индивидуальному эскизу',
-          price: 'от 800 ₽',
+          price: 'от 27 BYN',
           duration: 'от 45 мин'
         },
         {
           name: 'Стразы и декор',
           description: 'Украшение ногтей стразами, бульонками, фольгой',
-          price: 'от 200 ₽',
+          price: 'от 7 BYN',
           duration: 'от 15 мин'
         }
       ]
@@ -96,19 +96,19 @@ export default function Services() {
         {
           name: 'Классический педикюр',
           description: 'Полный комплекс ухода за стопами и ногтями',
-          price: '2 500 ₽',
+          price: '83 BYN',
           duration: '90 мин'
         },
         {
           name: 'Педикюр + гель-лак',
           description: 'Классический педикюр с покрытием гель-лаком',
-          price: '3 500 ₽',
+          price: '117 BYN',
           duration: '120 мин'
         },
         {
           name: 'СПА-педикюр',
           description: 'Уходовый педикюр с парафинотерапией и массажем',
-          price: '3 800 ₽',
+          price: '127 BYN',
           duration: '120 мин'
         }
       ]
@@ -119,19 +119,19 @@ export default function Services() {
         {
           name: 'Снятие гель-лака',
           description: 'Безопасное снятие гель-лакового покрытия',
-          price: '400 ₽',
+          price: '13 BYN',
           duration: '30 мин'
         },
         {
           name: 'Коррекция нарощенных ногтей',
           description: 'Поддержание формы и длины нарощенных ногтей',
-          price: 'от 1 500 ₽',
+          price: 'от 50 BYN',
           duration: 'от 60 мин'
         },
         {
           name: 'Ремонт ногтя',
           description: 'Восстановление сломанного ногтя',
-          price: 'от 300 ₽',
+          price: 'от 10 BYN',
           duration: 'от 20 мин'
         }
       ]
@@ -309,7 +309,7 @@ export default function Services() {
               Записаться онлайн
             </Link>
             <a
-              href="tel:+79999999999"
+              href="tel:+375333014486"
               className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-primary transition-colors duration-200 font-semibold text-base sm:text-lg w-full sm:w-auto"
             >
               Позвонить сейчас
