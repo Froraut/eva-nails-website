@@ -123,7 +123,7 @@ export default function Home() {
               <h3 className="font-serif text-xl font-bold text-gray-900 mb-2">Классический маникюр</h3>
               <p className="text-gray-600 mb-4">Аккуратный и ухоженный вид ваших ногтей</p>
               <div className="flex justify-between items-center">
-                <span className="font-bold text-primary text-xl">от 50 BYN</span>
+                <span className="font-bold text-primary text-xl">от 1 500 ₽</span>
                 <span className="text-gray-500 text-sm">60 мин</span>
               </div>
             </div>
@@ -135,7 +135,7 @@ export default function Home() {
               <h3 className="font-serif text-xl font-bold text-gray-900 mb-2">Гель-лак</h3>
               <p className="text-gray-600 mb-4">Долговременное покрытие с огромной палитрой цветов</p>
               <div className="flex justify-between items-center">
-                <span className="font-bold text-primary text-xl">от 67 BYN</span>
+                <span className="font-bold text-primary text-xl">от 2 000 ₽</span>
                 <span className="text-gray-500 text-sm">90 мин</span>
               </div>
             </div>
@@ -147,7 +147,7 @@ export default function Home() {
               <h3 className="font-serif text-xl font-bold text-gray-900 mb-2">Дизайн ногтей</h3>
               <p className="text-gray-600 mb-4">Уникальные рисунки и декоративные элементы</p>
               <div className="flex justify-between items-center">
-                <span className="font-bold text-primary text-xl">от 17 BYN</span>
+                <span className="font-bold text-primary text-xl">от 500 ₽</span>
                 <span className="text-gray-500 text-sm">30 мин</span>
               </div>
             </div>
@@ -248,7 +248,7 @@ export default function Home() {
               Записаться онлайн
             </Link>
             <a
-              href="tel:+375333014486"
+              href="tel:+79999999999"
               className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-primary transition-colors duration-200 font-semibold text-base sm:text-lg w-full sm:w-auto"
             >
               Позвонить сейчас
