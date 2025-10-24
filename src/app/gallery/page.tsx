@@ -230,7 +230,7 @@ export default function Gallery() {
               Записаться на дизайн
             </Link>
             <a
-              href="tel:+79999999999"
+              href="tel:+375333014486"
               className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-primary transition-colors duration-200 font-semibold text-base sm:text-lg w-full sm:w-auto"
             >
               Обсудить дизайн
